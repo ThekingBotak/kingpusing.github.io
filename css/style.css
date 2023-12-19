@@ -21,8 +21,8 @@ header.navbar-container {
   justify-content: space-around;
   align-items: center;
   z-index: 9999;
-  background-color: #7b66ff;
-  border-bottom: 1px solid white;
+  background-color: #5FBDFF;
+  border-bottom: 1px solid #fff;
 }
 
 header.navbar-container .logo img {
@@ -33,7 +33,7 @@ header.navbar-container .navbar ul {
   padding-left: 0;
   display: flex;
   justify-content: center;
-  gap: 1.6rem 1rem;
+  gap: 1.4rem 1rem;
 }
 
 header.navbar-container .navbar li {
@@ -53,7 +53,8 @@ header.navbar-container .navbar li a {
 
 header.navbar-container .navbar li a:hover {
   background-color: white;
-  color: #5fbdff;
+  color: #7B66FF;
+  font-weight: 700;
 }
 
 /* content */
@@ -66,7 +67,7 @@ main {
   align-items: center;
   flex: 1;
   flex-direction: column;
-  background-color: #c5fff8;
+  background-color: #7B66FF;
 }
 
 main .content {
@@ -92,10 +93,10 @@ main .content .pembukaan .description {
   flex: 1 1;
 }
 main .content .pembukaan .description .title {
-  font-size: 3rem;
+  font-size: 3.3rem;
   margin-block: 1rem;
   text-transform: capitalize;
-  color: #7b66ff;
+  color: #fff;
   font-weight: 700;
 }
 
@@ -103,10 +104,11 @@ main .content .pembukaan .description p {
   font-size: 1.25rem;
   line-height: 1.5rem;
   color: #5fbdff;
+  font-weight: 500;
 }
 
 main .content .pembukaan .description p span {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 main .content .pembukaan .description-image {
@@ -139,8 +141,8 @@ main .content .manfaat .image-manfaat {
 }
 
 main .content .manfaat .image-manfaat img {
-  width: 500px;
-  min-width: 450px;
+  width: 458px;
+  min-width: 394px;
   margin: auto;
 }
 
@@ -148,9 +150,81 @@ main .content .content-manfaat {
   flex: 1 1;
 }
 main .content .content-manfaat .sub-title {
-  font-size: 2.5rem;
-  color: #7b66ff;
+  font-size: 2.8rem;
+  color: #fff;
   font-weight: 700;
   text-transform: capitalize;
   margin-block: 1rem;
+}
+
+main .content .content-manfaat p, ol {
+  font-size: 1.25rem;
+  line-height: 1.5rem; 
+  color: #5fbdff;
+  font-weight: 500;
+}
+
+main .content .menu-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  margin: 20px;
+}
+
+main .content .menu-container .title-menu h2 {
+  margin-block: 1rem;
+  font-size: 2.8rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+
+main .content .menu-container .title-menu p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #5fbdff;
+}
+
+main .content .menu-container .menu {
+  flex: 1 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+main .content .menu-container .menu .card-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+  background-color: #5fbdff;
+  border-radius: 20px;
+  height: 400px;
+}
+
+.photo-menu1 {
+  transform: scale(0.7);
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+main .content .menu-container .menu .card-menu img {
+  /* width: 150px;
+  min-width: 100px;
+  height: 400px; */
+}
+
+main .content .menu-container .menu .card-menu span {
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: 500;
 }
