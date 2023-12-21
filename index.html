@@ -16,8 +16,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Shade&family=Nunito+Sans:wght@300;700&family=Poppins&family=Quicksand:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Shade&family=Nunito+Sans:wght@300;700&family=Poppins&family=Quicksand:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
   </head>
   <body>
@@ -30,7 +37,7 @@
           <li><a href="#">Home</a></li>
           <li><a href="#manfaat">Manfaat</a></li>
           <li><a href="#menu">Menu</a></li>
-          <li><a href="#kontak">kontak</a></li>
+          <li><a href="#profil">Profil</a></li>
         </ul>
       </nav>
     </header>
@@ -73,48 +80,83 @@
             </ol>
           </div>
         </article>
-        <article class="menu-container" id="menu">
-          <div class="title-menu">
-            <h2>list menu</h2>
-            <p>ada beberapa produk yang kami sediakan:</p>
-          </div>
-          <div class="menu">
-            <div class="card-menu">
-              <img src="image/Plastic_bottle_with_water_stock_image__Image_of_cover_-_19929813-removebg-preview.png" alt="" class="photo-menu1"/>
-              <span>Botol 600ml</span>
+        <article class="menu" id="menu">
+          <h2>Varian Kemasan</h2>
+          <p>Kami memiliki beberapa varian kemasan</p>
+          <div class="row">
+            <div class="menu-card">
+              <img
+                src="image/w_a_t_e_r.jpeg"
+                alt="Botol"
+                class="menu-card-img"
+              />
+              <h3 class="menu-card-title">Botol</h3>
+              <p class="menu-card-price">Rp 6000</p>
             </div>
-            <div class="card-menu">
-              <img src="image/Plastic_water_bottle_stock_image__Image_of_delivery__gallon_-_56168023-removebg-preview.png" alt="" class="photo-menu2"/>
-              <span>Galon 19L</span>
+            <div class="menu-card">
+              <img
+                src="image/download.jpeg"
+                alt="Botol"
+                class="menu-card-img"
+              />
+              <h3 class="menu-card-title">Galon</h3>
+              <p class="menu-card-price">Rp 19000</p>
             </div>
           </div>
         </article>
-      </div>
-      <aside>
-        <article class="card-profil">
-          <header>
-            <h1>Biodata</h1>
+        <article class="card-profil" id="profil">
+          <header class="header-profil">
+            <h2 class="card-profil-title">Biodata</h2>
             <figure>
-              <img src="" alt="" />
+              <img src="image/IMG_0978.JPG" alt="foto profil" />
               <figcaption>Foto Profil</figcaption>
             </figure>
           </header>
           <section>
             <h3>Data Pribadi</h3>
-            <table></table>
+            <table cellpadding="5">
+              <tr>
+                <th>Nama</th>
+                <td>Naufal Alfihunsi</td>
+              </tr>
+              <tr>
+                <th>Tempat Tinggal</th>
+                <td>Depok</td>
+              </tr>
+              <tr>
+                <th>Email</th>
+                <td>naufalalfihusni03@gmail.com</td>
+              </tr>
+            </table>
           </section>
         </article>
+      </div>
+      <aside>
+        <div class="social-media">
+          <ul>
+            <li>
+              <a
+                href="https://youtube.com/@channelrandom366?si=GV2flYyFws9-SqQa"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/alfi_1215/?hl=id"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/thekingtm134/"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
       </aside>
     </main>
-    <footer>
-      <div class="social-media">
-        <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
-      </div>
-      <p>air minum kesehatn &#169; 2023, Air Minum</p>
+    <footer class="footer-container">
+      <img src="image/logo tgs akhir (3).png" alt="" />
+      <p>air minum kesehatan &#169; 2023, Air Minum</p>
     </footer>
   </body>
 </html>

@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Quicksand", sans-serif;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -21,7 +21,7 @@ header.navbar-container {
   justify-content: space-around;
   align-items: center;
   z-index: 9999;
-  background-color: #5FBDFF;
+  background-color: #146c94;
   border-bottom: 1px solid #fff;
 }
 
@@ -53,21 +53,20 @@ header.navbar-container .navbar li a {
 
 header.navbar-container .navbar li a:hover {
   background-color: white;
-  color: #7B66FF;
+  color: #146c94;
   font-weight: 700;
 }
 
 /* content */
 main {
   width: 100%;
-  /* max-width: 1200px; */
   padding: 2rem 1rem;
   margin-inline: auto;
   display: flex;
   align-items: center;
   flex: 1;
   flex-direction: column;
-  background-color: #7B66FF;
+  background-color: #f6f1f1;
 }
 
 main .content {
@@ -96,14 +95,14 @@ main .content .pembukaan .description .title {
   font-size: 3.3rem;
   margin-block: 1rem;
   text-transform: capitalize;
-  color: #fff;
+  color: #146c94;
   font-weight: 700;
 }
 
 main .content .pembukaan .description p {
   font-size: 1.25rem;
   line-height: 1.5rem;
-  color: #5fbdff;
+  color: #19a7ce;
   font-weight: 500;
 }
 
@@ -142,7 +141,7 @@ main .content .manfaat .image-manfaat {
 
 main .content .manfaat .image-manfaat img {
   width: 458px;
-  min-width: 394px;
+  min-width: 280px;
   margin: auto;
 }
 
@@ -151,80 +150,244 @@ main .content .content-manfaat {
 }
 main .content .content-manfaat .sub-title {
   font-size: 2.8rem;
-  color: #fff;
+  color: #146c94;
   font-weight: 700;
   text-transform: capitalize;
   margin-block: 1rem;
 }
 
-main .content .content-manfaat p, ol {
+main .content .content-manfaat p,
+ol {
   font-size: 1.25rem;
-  line-height: 1.5rem; 
-  color: #5fbdff;
+  line-height: 1.5rem;
+  color: #19a7ce;
   font-weight: 500;
 }
 
-main .content .menu-container {
+main .content .menu {
+  margin: 20px;
+  padding: 50px;
+}
+
+main .menu h2 {
+  font-size: 2.8rem;
+  text-align: center;
+  color: #146c94;
+  margin-bottom: 0.85rem;
+  font-weight: 700;
+}
+
+main .menu p {
+  text-align: center;
+  max-width: 20rem;
+  margin: auto;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.3rem;
+  color: #19a7ce;
+}
+
+.menu .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  justify-content: center;
+}
+
+.menu .row .menu-card {
+  text-align: center;
+  width: 500px;
+  padding-bottom: 2rem;
+}
+
+.menu .row .menu-card img {
+  border-radius: 50%;
+  width: 80%;
+  transform: scale(90%);
+}
+
+.menu .row .menu-card .menu-card-title {
+  font-size: 1.5rem;
+  margin: 0.1rem auto 0.5rem;
+  color: #146c94;
+}
+
+.menu .row .menu-card .menu-card-price {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+main .content .card-profil {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 30px;
   padding: 50px;
   margin: 20px;
 }
 
-main .content .menu-container .title-menu h2 {
-  margin-block: 1rem;
-  font-size: 2.8rem;
-  text-transform: capitalize;
-  font-weight: 700;
+.card-profil .header-profil .card-profil-title {
   text-align: center;
-  color: #fff;
+  color: #146c94;
+  font-size: 2.8rem;
+  font-weight: 700;
 }
 
-main .content .menu-container .title-menu p {
-  font-size: 1.3rem;
-  font-weight: 500;
-  color: #5fbdff;
-}
-
-main .content .menu-container .menu {
-  flex: 1 1;
+.card-profil .header-profil figure {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
-}
-
-main .content .menu-container .menu .card-menu {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  margin: 10px;
-  background-color: #5fbdff;
-  border-radius: 20px;
-  height: 400px;
 }
 
-.photo-menu1 {
-  transform: scale(0.7);
-  width: 150px;
-  height: auto;
-  object-fit: cover;
-  object-position: center;
+.card-profil .header-profil figure img {
+  border-radius: 50%;
+  width: 30%;
+  margin-bottom: 1rem;
 }
 
-main .content .menu-container .menu .card-menu img {
-  /* width: 150px;
-  min-width: 100px;
-  height: 400px; */
-}
-
-main .content .menu-container .menu .card-menu span {
-  font-size: 1.3rem;
-  color: #fff;
+.card-profil section h3 {
+  font-size: 1.8rem;
   font-weight: 500;
+  text-align: center;
+  color: #146c94;
+}
+
+.card-profil section table {
+  text-align: left;
+}
+
+.card-profil section table th {
+  color: #146c94;
+  font-size: 1rem;
+}
+
+.card-profil section table tr {
+  color: #19a7ce;
+  font-size: 1rem;
+}
+
+/* aside */
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+
+main aside .social-media {
+  height: 100%;
+  display: flex;
+}
+
+main aside .social-media ul {
+  padding: 1.5rem 1rem;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin: auto;
+  background-color: #146c94;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+main aside .social-media li {
+  list-style-type: none;
+}
+
+main aside .social-media li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+main aside .social-media li a:hover {
+  color: #afd3e2;
+}
+
+/* footer */
+.footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #146c94;
+}
+
+.footer-container img {
+  width: 200px;
+}
+
+.footer-container p {
+  color: #fff;
+}
+/* query */
+@media screen and (max-width: 1200px) {
+  main .content .pembukaan {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+
+  main .content .pembukaan {
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  main .content .pembukaan .description .title {
+    font-size: 2.8rem;
+  }
+
+  main .content .pembukaan .description-image {
+    order: -1;
+    width: 300px;
+  }
+
+  main .content .manfaat {
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  main .content .content-manfaat .sub-title {
+    font-size: 2rem;
+  }
+
+  main .content .manfaat .image-manfaat img {
+    width: 300px;
+    align-items: center;
+  }
+
+  .menu .row .menu-card {
+    width: 290px;
+  }
+
+  .card-profil .header-profil figure img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  header.navbar-container .navbar ul {
+    gap: 0.3rem;
+  }
+
+  .card-profil .header-profil figure img {
+    width: 80%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-container img {
+    width: 180px;
+  }
 }
